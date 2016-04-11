@@ -486,7 +486,7 @@ namespace KNN
                 int licz = 0;
                 for (int s = 0; s < STestowy.Length; s++)
                     //!= Stestowy ? TPR może być == ? 
-                    if (aKlasyfikacje[s] == -2 && KlasyDecyzyjne[c] == STestowy[s].Last()) licz++;
+                    if (aKlasyfikacje[s] == -2 && KlasyDecyzyjne[c] != STestowy[s].Last()) licz++;
                 błędnieSklasyfikowane.Add(KlasyDecyzyjne[c], licz);
             }
             return błędnieSklasyfikowane;
