@@ -37,12 +37,33 @@ namespace KNN
             if (wynik != DialogResult.OK) return;
             STestowy = KonwertujDane(System.IO.File.ReadAllText(ofdSystemTestowy.FileName));
             btnTST.Enabled = true;
-            int i;
-            for ( i= 1; i < STreningowy.Length/2;i++)//liczba naszych sąsiadów
-            cBKnn.Items.Add(i);
-            cBKnn.Items.Add(i);
+          
+            
             cBMetryka.Enabled = true;
             KlasyDecyzyjne = PoliczKlasyDecyzyjne().ToArray<int>();
+            int k = PoliczMinK();
+            for(int i =1; i <= k; i++)
+            {
+                cBKnn.Items.Add(i);
+            }
+
+        }
+
+        private int PoliczMinK()
+        {
+            List<int> lista = new List<int>();
+            int licznik = 0;
+            for(int i = 0; i < KlasyDecyzyjne.Length; i++)
+            {
+                
+                for(int j = 0; j < STreningowy.Length; j++)
+                {
+                    if (KlasyDecyzyjne[i] == STreningowy[j].Last<int>()) licznik++;
+                }
+                lista.Add(licznik);
+                licznik = 0;
+            }
+            return lista.Min();
         }
 
         private int[][] KonwertujDane(string trescPliku)
@@ -122,6 +143,8 @@ namespace KNN
             Dictionary<string, double> listaParametrówGlobalnych = new Dictionary<string, double>();
             listaParametrówGlobalnych["Accuracy"] = PoliczAccuracy(PoliczSumę(poprawnieSklasyfikowane), PoliczSumę(ogólnieChwycone));
             listaParametrówGlobalnych["Coverage"] = PoliczCoverage(PoliczSumę(ogólnieChwycone), STestowy.Length);
+
+            //wyświetlanie.
             string napis = "Klasa Decyzyjna | ";
             for (int c = 0; c < KlasyDecyzyjne.Length; c++)
             {
