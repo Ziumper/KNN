@@ -55,15 +55,10 @@
             this.cBMetryka.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBMetryka.FormattingEnabled = true;
             this.cBMetryka.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cBMetryka.Items.AddRange(new object[] {
-            "Euklidesa",
-            "Canbera",
-            "Czebyszewa",
-            "Manhattan",
-            "Bez. współ. korel. Pearsona"});
-            this.cBMetryka.Location = new System.Drawing.Point(6, 35);
+            this.cBMetryka.Location = new System.Drawing.Point(8, 43);
+            this.cBMetryka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cBMetryka.Name = "cBMetryka";
-            this.cBMetryka.Size = new System.Drawing.Size(150, 21);
+            this.cBMetryka.Size = new System.Drawing.Size(199, 24);
             this.cBMetryka.TabIndex = 1;
             this.cBMetryka.SelectedIndexChanged += new System.EventHandler(this.cBMetryka_SelectedIndexChanged);
             // 
@@ -77,9 +72,10 @@
             // 
             // btnWczytaj
             // 
-            this.btnWczytaj.Location = new System.Drawing.Point(72, 114);
+            this.btnWczytaj.Location = new System.Drawing.Point(96, 140);
+            this.btnWczytaj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnWczytaj.Name = "btnWczytaj";
-            this.btnWczytaj.Size = new System.Drawing.Size(75, 23);
+            this.btnWczytaj.Size = new System.Drawing.Size(100, 28);
             this.btnWczytaj.TabIndex = 0;
             this.btnWczytaj.Text = "Wczytaj";
             this.btnWczytaj.UseVisualStyleBackColor = true;
@@ -90,9 +86,11 @@
             this.gBDane.Controls.Add(this.groupBox2);
             this.gBDane.Controls.Add(this.groupBox1);
             this.gBDane.Controls.Add(this.btnWczytaj);
-            this.gBDane.Location = new System.Drawing.Point(12, 12);
+            this.gBDane.Location = new System.Drawing.Point(16, 15);
+            this.gBDane.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gBDane.Name = "gBDane";
-            this.gBDane.Size = new System.Drawing.Size(248, 144);
+            this.gBDane.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gBDane.Size = new System.Drawing.Size(331, 177);
             this.gBDane.TabIndex = 1;
             this.gBDane.TabStop = false;
             this.gBDane.Text = "Dane";
@@ -100,18 +98,21 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnTST);
-            this.groupBox2.Location = new System.Drawing.Point(125, 19);
+            this.groupBox2.Location = new System.Drawing.Point(167, 23);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(107, 89);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(143, 110);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "System Testowy";
             // 
             // btnTST
             // 
-            this.btnTST.Location = new System.Drawing.Point(18, 36);
+            this.btnTST.Location = new System.Drawing.Point(24, 44);
+            this.btnTST.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTST.Name = "btnTST";
-            this.btnTST.Size = new System.Drawing.Size(75, 23);
+            this.btnTST.Size = new System.Drawing.Size(100, 28);
             this.btnTST.TabIndex = 0;
             this.btnTST.Text = "Pokaż TST";
             this.btnTST.UseVisualStyleBackColor = true;
@@ -120,18 +121,21 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnTRN);
-            this.groupBox1.Location = new System.Drawing.Point(6, 19);
+            this.groupBox1.Location = new System.Drawing.Point(8, 23);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(121, 89);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(161, 110);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "System Treningowy";
             // 
             // btnTRN
             // 
-            this.btnTRN.Location = new System.Drawing.Point(18, 36);
+            this.btnTRN.Location = new System.Drawing.Point(24, 44);
+            this.btnTRN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTRN.Name = "btnTRN";
-            this.btnTRN.Size = new System.Drawing.Size(75, 23);
+            this.btnTRN.Size = new System.Drawing.Size(100, 28);
             this.btnTRN.TabIndex = 0;
             this.btnTRN.Text = "Pokaz TRN";
             this.btnTRN.UseVisualStyleBackColor = true;
@@ -144,9 +148,11 @@
             this.gBUstawienia.Controls.Add(this.cBMetryka);
             this.gBUstawienia.Controls.Add(this.lblMetryka);
             this.gBUstawienia.ImeMode = System.Windows.Forms.ImeMode.Katakana;
-            this.gBUstawienia.Location = new System.Drawing.Point(266, 12);
+            this.gBUstawienia.Location = new System.Drawing.Point(355, 15);
+            this.gBUstawienia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gBUstawienia.Name = "gBUstawienia";
-            this.gBUstawienia.Size = new System.Drawing.Size(169, 144);
+            this.gBUstawienia.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gBUstawienia.Size = new System.Drawing.Size(225, 177);
             this.gBUstawienia.TabIndex = 2;
             this.gBUstawienia.TabStop = false;
             this.gBUstawienia.Text = "Ustawienia";
@@ -155,45 +161,51 @@
             // 
             this.cBKnn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBKnn.FormattingEnabled = true;
-            this.cBKnn.Location = new System.Drawing.Point(6, 79);
+            this.cBKnn.Location = new System.Drawing.Point(8, 97);
+            this.cBKnn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cBKnn.Name = "cBKnn";
-            this.cBKnn.Size = new System.Drawing.Size(150, 21);
+            this.cBKnn.Size = new System.Drawing.Size(199, 24);
             this.cBKnn.TabIndex = 3;
             this.cBKnn.SelectedIndexChanged += new System.EventHandler(this.cBKnn_SelectedIndexChanged);
             // 
             // lblKnn
             // 
             this.lblKnn.AutoSize = true;
-            this.lblKnn.Location = new System.Drawing.Point(6, 63);
+            this.lblKnn.Location = new System.Drawing.Point(8, 78);
+            this.lblKnn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKnn.Name = "lblKnn";
-            this.lblKnn.Size = new System.Drawing.Size(32, 13);
+            this.lblKnn.Size = new System.Drawing.Size(40, 17);
             this.lblKnn.TabIndex = 2;
             this.lblKnn.Text = "k-NN";
             // 
             // lblMetryka
             // 
             this.lblMetryka.AutoSize = true;
-            this.lblMetryka.Location = new System.Drawing.Point(6, 19);
+            this.lblMetryka.Location = new System.Drawing.Point(8, 23);
+            this.lblMetryka.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMetryka.Name = "lblMetryka";
-            this.lblMetryka.Size = new System.Drawing.Size(45, 13);
+            this.lblMetryka.Size = new System.Drawing.Size(58, 17);
             this.lblMetryka.TabIndex = 0;
             this.lblMetryka.Text = "Metryka";
             // 
             // gBWyniki
             // 
             this.gBWyniki.Controls.Add(this.btnWyniki);
-            this.gBWyniki.Location = new System.Drawing.Point(442, 13);
+            this.gBWyniki.Location = new System.Drawing.Point(589, 16);
+            this.gBWyniki.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gBWyniki.Name = "gBWyniki";
-            this.gBWyniki.Size = new System.Drawing.Size(115, 143);
+            this.gBWyniki.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gBWyniki.Size = new System.Drawing.Size(153, 176);
             this.gBWyniki.TabIndex = 3;
             this.gBWyniki.TabStop = false;
             this.gBWyniki.Text = "Wyniki";
             // 
             // btnWyniki
             // 
-            this.btnWyniki.Location = new System.Drawing.Point(21, 31);
+            this.btnWyniki.Location = new System.Drawing.Point(28, 38);
+            this.btnWyniki.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnWyniki.Name = "btnWyniki";
-            this.btnWyniki.Size = new System.Drawing.Size(75, 44);
+            this.btnWyniki.Size = new System.Drawing.Size(100, 54);
             this.btnWyniki.TabIndex = 0;
             this.btnWyniki.Text = "Pokaz wyniki";
             this.btnWyniki.UseVisualStyleBackColor = true;
@@ -201,12 +213,13 @@
             // 
             // KNNForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 173);
+            this.ClientSize = new System.Drawing.Size(749, 213);
             this.Controls.Add(this.gBWyniki);
             this.Controls.Add(this.gBUstawienia);
             this.Controls.Add(this.gBDane);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "KNNForm";
             this.Text = "KNN Tomasz Komoszeski";
             this.gBDane.ResumeLayout(false);

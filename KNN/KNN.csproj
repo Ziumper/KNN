@@ -53,8 +53,12 @@
     <Compile Include="KNN.Designer.cs">
       <DependentUpon>KNN.cs</DependentUpon>
     </Compile>
+    <Compile Include="MacierzPredykcji.cs" />
+    <Compile Include="Metryki.cs" />
+    <Compile Include="ObiektDecyzyjny.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemDecyzyjny.cs" />
     <Compile Include="Wyswietlacz.cs">
       <SubType>Form</SubType>
     </Compile>

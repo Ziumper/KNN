@@ -19,6 +19,16 @@ namespace KNN
         public KNNForm()
         {
             InitializeComponent();
+
+            cBMetryka.DataSource = typeof(Metryki).GetMethods().Where(
+                metoda => metoda.IsStatic &&
+                          metoda.ReturnType == typeof(double) &&
+                          metoda.GetParameters().Length == 2 
+            ).ToList();
+
+            cBMetryka.DisplayMember = "Name";
+
+
             btnTRN.Enabled = false;
             btnTST.Enabled = false;
             cBKnn.Enabled = false;
@@ -111,6 +121,15 @@ namespace KNN
         //GŁÓWNA FUNKCJA LICZĄCA!
         private void btnWyniki_Click(object sender, EventArgs e)//działamy!
         {
+            SystemDecyzyjny testowy = new SystemDecyzyjny(ofdSystemTestowy.FileName);
+            var trenignowy = new SystemDecyzyjny(ofdSystemTreningowy.FileName);
+            int k = 3;
+
+            Metryka metryka = (Metryka)Delegate.CreateDelegate(typeof(Metryka), cBMetryka.SelectedItem as System.Reflection.MethodInfo);
+            //var macierz = trenignowy.Klasyfikuj(testowy, k, );
+
+
+
             List<int> klasyfikacje = new List<int>();
             double[][] metryka = PoliczMetrykę(cBMetryka.SelectedItem.GetHashCode());
 
@@ -178,7 +197,7 @@ namespace KNN
             napis += listaParametrówGlobalnych["Accuracy"].ToString("F2") + "\n Coverage:  ";
             napis += listaParametrówGlobalnych["Coverage"].ToString("F2") + "\n";
             
-            Wyswietlacz wysWyniki = new Wyswietlacz(napis,"Macierz Predykcji");
+            Wyswietlacz wysWyniki = new Wyswietlacz(napis,"Macierz Predykcji   | Użyta Metryka:"+cBMetryka.SelectedItem+" |    DLA k = " + cBKnn.SelectedItem);
             wysWyniki.Show();
         }
 
@@ -395,6 +414,7 @@ namespace KNN
                 if (!klasyDecyzyjne.Contains(STestowy[i].Last<int>()))
                     klasyDecyzyjne.Add(STestowy[i].Last<int>());
             }
+            klasyDecyzyjne.Sort();
             return klasyDecyzyjne;
         }
        

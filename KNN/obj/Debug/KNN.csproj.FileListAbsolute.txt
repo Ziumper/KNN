@@ -8,3 +8,13 @@ C:\Users\Tomasz Komoszeski\Documents\Studia\Semestr II\SI\SI ćwiczenia\cw2\KNN\
 C:\Users\Tomasz Komoszeski\Documents\Studia\Semestr II\SI\SI ćwiczenia\cw2\KNN\KNN\obj\Debug\KNN.exe
 C:\Users\Tomasz Komoszeski\Documents\Studia\Semestr II\SI\SI ćwiczenia\cw2\KNN\KNN\obj\Debug\KNN.pdb
 C:\Users\Tomasz Komoszeski\Documents\Studia\Semestr II\SI\SI ćwiczenia\cw2\KNN\KNN\obj\Debug\KNN.Wyswietlacz.resources
+C:\Users\JacekL\Documents\UWM\SI\2016\Komoszewski\cw2\KNN_poprawione\KNN\bin\Debug\KNN.exe.config
+C:\Users\JacekL\Documents\UWM\SI\2016\Komoszewski\cw2\KNN_poprawione\KNN\obj\Debug\KNN.exe
+C:\Users\JacekL\Documents\UWM\SI\2016\Komoszewski\cw2\KNN_poprawione\KNN\obj\Debug\KNN.pdb
+C:\Users\JacekL\Documents\UWM\SI\2016\Komoszewski\cw2\KNN_poprawione\KNN\obj\Debug\KNN.csprojResolveAssemblyReference.cache
+C:\Users\JacekL\Documents\UWM\SI\2016\Komoszewski\cw2\KNN_poprawione\KNN\obj\Debug\KNN.KNNForm.resources
+C:\Users\JacekL\Documents\UWM\SI\2016\Komoszewski\cw2\KNN_poprawione\KNN\obj\Debug\KNN.Properties.Resources.resources
+C:\Users\JacekL\Documents\UWM\SI\2016\Komoszewski\cw2\KNN_poprawione\KNN\obj\Debug\KNN.Wyswietlacz.resources
+C:\Users\JacekL\Documents\UWM\SI\2016\Komoszewski\cw2\KNN_poprawione\KNN\obj\Debug\KNN.csproj.GenerateResource.Cache
+C:\Users\JacekL\Documents\UWM\SI\2016\Komoszewski\cw2\KNN_poprawione\KNN\bin\Debug\KNN.exe
+C:\Users\JacekL\Documents\UWM\SI\2016\Komoszewski\cw2\KNN_poprawione\KNN\bin\Debug\KNN.pdb
