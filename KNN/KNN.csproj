@@ -53,6 +53,7 @@
     <Compile Include="KNN.Designer.cs">
       <DependentUpon>KNN.cs</DependentUpon>
     </Compile>
+    <Compile Include="Koncept.cs" />
     <Compile Include="MacierzPredykcji.cs" />
     <Compile Include="Metryki.cs" />
     <Compile Include="ObiektDecyzyjny.cs" />
