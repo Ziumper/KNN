@@ -178,7 +178,7 @@ namespace KNN
             napis += listaParametrówGlobalnych["Accuracy"].ToString("F2") + "\n Coverage:  ";
             napis += listaParametrówGlobalnych["Coverage"].ToString("F2") + "\n";
             
-            Wyswietlacz wysWyniki = new Wyswietlacz(napis,"Macierz Predykcji");
+            Wyswietlacz wysWyniki = new Wyswietlacz(napis,"Macierz Predykcji   | Użyta Metryka:"+cBMetryka.SelectedItem+" |    DLA k = " + cBKnn.SelectedItem);
             wysWyniki.Show();
         }
 
@@ -395,6 +395,7 @@ namespace KNN
                 if (!klasyDecyzyjne.Contains(STestowy[i].Last<int>()))
                     klasyDecyzyjne.Add(STestowy[i].Last<int>());
             }
+            klasyDecyzyjne.Sort();
             return klasyDecyzyjne;
         }
        
